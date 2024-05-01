@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    tools:context=".HeyActivity">
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="84dp"
+        android:layout_height="75dp"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="19dp"
+        android:src="@drawable/rgptlogo" />
+
+    <TextView
+        android:id="@+id/textViewPrefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewIcon"
+
+        android:layout_marginStart="19dp"
+        android:text="Your new "
+        android:lineHeight="31dp"
+        android:fontFamily="@font/kanitlight"
+        android:textColor="#5E6670"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewHighlight"
+        android:lineHeight="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewPrefix"
+        android:layout_alignTop="@id/textViewPrefix"
+        android:text="GenAI-"
+        android:fontFamily="@font/kanitmedium"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        />
+
+
+    <TextView
+        android:id="@+id/textViewSecondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrefix"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/kanitmedium"
+        android:lineHeight="31dp"
+        android:text="powered sidekick"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewSuffix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textViewSecondLine"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/textViewSecondLine"
+        android:fontFamily="@font/kanitlight"
+        android:lineHeight="31dp"
+        android:text=" that’s"
+        android:textColor="#5E6670"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewLastLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSecondLine"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/kanitlight"
+        android:lineHeight="31dp"
+        android:text="all about boosting\nefficiency and\npersonalizing the\ncustomer experience"
+        android:textColor="#5E6670"
+        android:textSize="30sp" />
+
+<!--    2nd-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewPre"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/textViewLastLine"-->
+<!--        android:layout_marginStart="18dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:fontFamily="@font/kanitregular"-->
+<!--        android:lineHeight="21dp"-->
+<!--        android:text="Whether you run a bustling mall or a\ntrendy boutique, "-->
+<!--        android:textColor="#5E6670"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewHigh"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@id/textViewPre"-->
+<!--        android:layout_marginStart="-139dp"-->
+<!--        android:layout_marginTop="21dp"-->
+<!--        android:layout_toEndOf="@id/textViewPre"-->
+<!--        android:fontFamily="@font/kanitregular"-->
+<!--        android:lineHeight="21dp"-->
+<!--        android:text="RetailGPT uses"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewGen"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBottom="@id/textViewPre"-->
+<!--        android:layout_marginStart="18dp"-->
+<!--        android:layout_marginBottom="-20dp"-->
+<!--        android:fontFamily="@font/kanitregular"-->
+<!--        android:text="Generative AI"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewSuff"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@id/textViewHigh"-->
+<!--        android:layout_marginStart="-131dp"-->
+<!--        android:layout_marginTop="19dp"-->
+<!--        android:layout_toEndOf="@id/textViewHigh"-->
+<!--        android:fontFamily="@font/kanitregular"-->
+<!--        android:lineHeight="21dp"-->
+<!--        android:text=" to deeply understand and"-->
+<!--        android:textColor="#5E6670"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textViewLast"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@id/textViewHigh"-->
+<!--        android:layout_marginStart="-228dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_toEndOf="@id/textViewHigh"-->
+<!--        android:fontFamily="@font/kanitregular"-->
+<!--        android:lineHeight="20dp"-->
+<!--        android:text="cater to your customers' desires,\neven before they do!"-->
+<!--        android:textColor="#5E6670"-->
+<!--        android:textSize="16sp" />-->
+    <TextView
+        android:id="@+id/textViewParaOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLastLine"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="19dp"
+        android:fontFamily="@font/kanitregular"
+        android:lineHeight="20dp"
+        android:text="Whether you run a bustling mall or a\ntrendy boutique, RetailGPT uses\nGenerative AI to deeply understand and\ncater to your customers' desires, even\nbefore they do! "
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/textViewParaTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewParaOne"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="19dp"
+        android:fontFamily="@font/kanitregular"
+        android:lineHeight="20dp"
+        android:text="It's designed to enhance shopper\ninteractions, making their experience\nsmoother and more enjoyable, which\nmeans better business for you."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewParaThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewParaTwo"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="19dp"
+        android:fontFamily="@font/kanitregular"
+        android:lineHeight="20dp"
+        android:text="So, if you're looking to elevate sales,\nconnect with customers, and lead the\nretail evolution, RetailGPT is here\nto make it happen"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/imageButtonReserve"-->
+<!--        android:layout_width="350dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_below="@id/textViewParaThree"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/reservebutton"-->
+<!--        android:background="@null"/>-->
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textViewParaThree"
+        android:fontFamily="@font/kanitmedium"
+        android:text="Reserve your spot"
+        android:layout_marginTop="20dp"
+        android:textSize="17sp"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"/>
+
+
+
+
+</RelativeLayout>
+

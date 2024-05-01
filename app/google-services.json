@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "838259318280",
+    "firebase_url": "https://retailgpt-8989f-default-rtdb.firebaseio.com",
+    "project_id": "retailgpt-8989f",
+    "storage_bucket": "retailgpt-8989f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:838259318280:android:09e443fe2f3131c71fbbbd",
+        "android_client_info": {
+          "package_name": "com.ionio.retailgptinstantapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWQ8YlL2vTBsYIa9SDtPLYFjOkn5384zA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

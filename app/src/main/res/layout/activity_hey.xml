@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".HeyActivity">
+
+    <TextView
+        android:id="@+id/textViewHeyThere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/kanitextrabold"
+        android:lineHeight="70dp"
+        android:layout_marginStart="18dp"
+        android:text="HEY THERE"
+        android:textColor="#B154C1"
+        android:textSize="92sp" />
+
+    <TextView
+        android:id="@+id/textViewReady"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewHeyThere"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/kanitsemibold"
+        android:lineHeight="50dp"
+        android:text="Ready to transform\nyour retail operations?"
+        android:textColor="#5E6670"
+        android:textSize="50sp" />
+
+</RelativeLayout>
+

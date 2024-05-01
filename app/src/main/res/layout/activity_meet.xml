@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".HeyActivity">
+
+    <TextView
+        android:id="@+id/textViewMeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/kanitextrabold"
+        android:lineHeight="70dp"
+        android:layout_marginStart="19dp"
+        android:text="MEET"
+        android:textColor="#B154C1"
+        android:textSize="92sp" />
+
+    <TextView
+        android:id="@+id/textViewRGPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMeet"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="-30dp"
+        android:fontFamily="@font/kanitsemibold"
+        android:lineHeight="50dp"
+        android:text="RetailGPT"
+        android:textColor="#5E6670"
+        android:textSize="50sp" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textViewRGPT"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="19dp"
+        android:src="@drawable/rgptlogo" />
+
+    <TextView
+        android:id="@+id/textViewPrefix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewIcon"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="19dp"
+        android:text="Your new "
+        android:lineHeight="31dp"
+        android:fontFamily="@font/kanitlight"
+        android:textColor="#5E6670"
+    android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewHighlight"
+        android:lineHeight="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewPrefix"
+        android:layout_alignTop="@id/textViewPrefix"
+        android:text="GenAI-"
+        android:fontFamily="@font/kanitmedium"
+        android:textColor="#000000"
+    android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/textViewSecondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPrefix"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/kanitmedium"
+        android:lineHeight="31dp"
+        android:text="powered sidekick"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewSuffix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textViewSecondLine"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/textViewSecondLine"
+        android:fontFamily="@font/kanitlight"
+        android:lineHeight="31dp"
+        android:text=" that’s"
+        android:textColor="#5E6670"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewLastLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSecondLine"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-15dp"
+        android:fontFamily="@font/kanitlight"
+        android:lineHeight="31dp"
+        android:text="all about boosting\nefficiency and\npersonalizing the\ncustomer experience"
+        android:textColor="#5E6670"
+        android:textSize="30sp" />
+
+</RelativeLayout>
+
