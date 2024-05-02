@@ -1,9 +1,8 @@
 package com.ionio.retailgptinstantapp
 
-import android.os.Bundle
 import android.content.Intent
+import android.os.Bundle
 import android.widget.RelativeLayout
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -11,19 +10,18 @@ import androidx.core.view.WindowInsetsCompat
 class HeyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_hey)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+
+        val mainLayout: RelativeLayout = findViewById(R.id.main)
+        mainLayout.setOnClickListener {
+            val intent = Intent(this, MeetActivity::class.java)
+            startActivity(intent)
+        }
+
+        ViewCompat.setOnApplyWindowInsetsListener(mainLayout) { view, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val rootLayout = findViewById<RelativeLayout>(R.id.rootLayout)
-        rootLayout.setOnClickListener {
-            // Start the MeetActivity
-            startActivity(Intent(this, MeetActivity::class.java))
-        }
-
     }
 }
